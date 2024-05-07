@@ -3,37 +3,20 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9; /* Light grey background for better contrast */
-    color: #333; /* Dark grey text for readability */
-}
-
-/* Container for the timeline */
-#timeline-container {
-    padding: 20px;
-    margin-left: 300px; /* Space for the map */
-}
-
-/* Styling individual timeline entries */
-.timeline-entry {
-    background: white;
-    border: 1px solid #ddd; /* Light grey border for each entry */
-    margin-bottom: 20px; /* Space between entries */
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    border-radius: 5px; /* Rounded corners */
+    background: #f9f9f9; /* Light grey background */
+    color: #333; /* Dark grey text */
 }
 
 /* Fixed position map container */
 #map-container {
     position: fixed;
     top: 20px; /* Align top of the map with the page */
-    left: 20px; /* Align left of the map with the page */
-    width: 250px; /* Fixed width */
-    height: 100%; /* Full height map */
-    border: 1px solid #ccc; /* Consistent light grey border */
-    background: #fff; /* White background for the map area */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 1000; /* Ensures map stays above other content */
+    right: 20px; /* Align right of the map with the page */
+    width: 300px; /* Fixed width */
+    height: 90%; /* Percentage height */
+    border: 1px solid #ccc; /* Light grey border */
+    background: #fff; /* White background */
+    z-index: 1000; /* Keeps the map on top */
 }
 
 /* Map element styling */
@@ -42,23 +25,17 @@ body {
     height: 100%;
 }
 
-/* Load more button container */
-#load-more {
-    text-align: center;
+/* Timeline container styling */
+#timeline-container {
+    margin-left: 320px; /* Make room for the map */
     padding: 20px;
 }
 
-/* Button styling */
-button {
-    padding: 10px 20px;
-    font-size: 16px; /* Larger font size for better readability */
-    color: white;
-    background-color: #007BFF; /* Bootstrap blue for visibility */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3; /* Darker blue on hover for interaction feedback */
+/* Styling individual timeline entries */
+.timeline-entry {
+    background: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
