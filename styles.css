@@ -1,105 +1,64 @@
 /* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background: #f9f9f9; /* Light grey background for better contrast */
+    color: #333; /* Dark grey text for readability */
 }
 
-/* Container for the entire page content */
-#main-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Timeline styles */
+/* Container for the timeline */
 #timeline-container {
-    grid-column: 2 / 3;
-    position: relative;
-    background: #fff;
     padding: 20px;
-    border: 1px solid #ccc;
-    height: 800px; /* You can adjust the height based on your content */
-    overflow-y: scroll;
+    margin-left: 300px; /* Space for the map */
 }
 
-#timeline {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #333;
+/* Styling individual timeline entries */
+.timeline-entry {
+    background: white;
+    border: 1px solid #ddd; /* Light grey border for each entry */
+    margin-bottom: 20px; /* Space between entries */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Rounded corners */
 }
 
-/* Map styles */
+/* Fixed position map container */
 #map-container {
-    grid-column: 1 / 2;
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    height: 400px; /* Adjust based on preference */
+    position: fixed;
+    top: 20px; /* Align top of the map with the page */
+    left: 20px; /* Align left of the map with the page */
+    width: 250px; /* Fixed width */
+    height: 100%; /* Full height map */
+    border: 1px solid #ccc; /* Consistent light grey border */
+    background: #fff; /* White background for the map area */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000; /* Ensures map stays above other content */
 }
 
+/* Map element styling */
 #map {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
-/* Projects section styles */
-#projects-container {
-    grid-column: 1 / 2;
-    background: #fff;
+/* Load more button container */
+#load-more {
+    text-align: center;
     padding: 20px;
-    border: 1px solid #ccc;
-    margin-top: 20px;
 }
 
-#projects-list {
-    list-style-type: none;
-    padding: 0;
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px; /* Larger font size for better readability */
+    color: white;
+    background-color: #007BFF; /* Bootstrap blue for visibility */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#projects-list li {
-    padding: 8px;
-    border-bottom: 1px solid #ccc;
-}
-
-/* Experience section styles */
-#experience-container {
-    grid-column: 3 / 4;
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-#experience-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-#experience-list li {
-    padding: 8px;
-    border-bottom: 1px solid #ccc;
-}
-
-/* Scrollbar styles for the timeline */
-#timeline-container::-webkit-scrollbar {
-    width: 10px;
-}
-
-#timeline-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-#timeline-container::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-#timeline-container::-webkit-scrollbar-thumb:hover {
-    background: #555;
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover for interaction feedback */
 }
