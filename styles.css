@@ -1,0 +1,105 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Container for the entire page content */
+#main-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Timeline styles */
+#timeline-container {
+    grid-column: 2 / 3;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: 800px; /* You can adjust the height based on your content */
+    overflow-y: scroll;
+}
+
+#timeline {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #333;
+}
+
+/* Map styles */
+#map-container {
+    grid-column: 1 / 2;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: 400px; /* Adjust based on preference */
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+/* Projects section styles */
+#projects-container {
+    grid-column: 1 / 2;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+#projects-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Experience section styles */
+#experience-container {
+    grid-column: 3 / 4;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#experience-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#experience-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Scrollbar styles for the timeline */
+#timeline-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+#timeline-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#timeline-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+#timeline-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
